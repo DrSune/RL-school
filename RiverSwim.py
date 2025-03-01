@@ -67,3 +67,15 @@ l = [0] # Initial state arbitrarily set at 0 in the class above.
 for _ in range(10):
 	l.append(env.step(1)[0])
 print("Sequence of states = ", l)
+
+
+
+class CE_OPO():
+	def __init__(self, alpha = 0.1, gamma = 0.15, epsilon = 0.98, m = 500, horizon = 10**6):
+		self.alpha = alpha
+		self.gamma = gamma 
+		self.epsilon = epsilon
+		self.m = m
+		self.horizon = horizon
+	
+	
